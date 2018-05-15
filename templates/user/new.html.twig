@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New User{% endblock %}
+
+{% block body %}
+<div class="container site-grey-background" style="border-top:5px solid green; margin-top:15px;">
+    <h2 style="padding-top:10px; padding-bottom:10px;">Sign up</h2>
+    {{ include('user/_form.html.twig', {button_label: "Sign up"}) }}
+    <a href="{{ path('user_index') }}">back to list</a>
+</div>
+{% endblock %}

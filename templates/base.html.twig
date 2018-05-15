@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Vulcan Gaming">
+        <meta name="keywords" content="Vulcan Gaming">
+        <meta name="author" content="Nathan Greenberg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Vulcan Gaming</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900" rel="stylesheet"> 
+        <style>
+            /** COLORS BEGIN */
+            .site-green-foreground {
+                color:#1fb622;
+            }
+            .site-white-foreground {
+                color:#FFF;
+            }
+            .site-black-foreground {
+                color:#060606;
+            }
+            .site-grey-foreground {
+                color:#eeeeee;
+            }
+            .site-grey2-foreground {
+                color:#cff0c5;
+            }
+            .site-grey2-foreground {
+                color:#aaaaaa;
+            }
+
+            .site-green-background {
+                background:#1fb622;
+            }
+            .site-black-background {
+                background:#060606;
+            }
+            .site-grey-background {
+                background:#eeeeee;
+            }
+            .site-grey2-background {
+                background:#cff0c5;
+            }
+            .site-grey2-background {
+                background:#aaaaaa;
+            }
+            /** END COLORS */   
+
+            /** UTILITY CLASSES */
+            .outline {
+                border:1px solid;
+            }
+            .center {
+                text-align:center;
+            }
+            .site-image {
+                border-radius:15px;
+                z-index:-9999999;
+                width:200px;
+                height:200px;
+                margin-bottom:15px;
+                position:relative;
+                top:0;
+                left:0;
+            }
+            .dark-low-opacity {
+                opacity:0.65;
+                background:#060606;
+            }
+            .sub-header {
+                z-index:1;
+                font-weight:bold;
+                font-family: 'Titillium Web', sans-serif;
+            }
+            .site-font {
+                font-family: 'Titillium Web', sans-serif;
+            }
+            .vertical-center {
+                padding-top:19%;
+                padding-bottom:19%;
+            }
+            .content {
+                text-align:left;
+                padding:25px;
+            }
+            /** END UTILITY CLASSES */
+ 
+            body {
+                background:#cff0c5;  
+            }
+
+            .bg-image {
+                position:absolute;
+                top:0;
+                left:0;
+                
+                opacity:0.2;
+                z-index:-999999999999999999999999999999999;
+            }
+
+            h1 {
+                margin:0;
+            }
+
+            .site-header {
+                font-family: 'Titillium Web', sans-serif;
+                padding:25px;
+                border-top:5px solid #1fb622;
+            }
+
+            .site-navigation { 
+                margin-top:2px;
+            }
+
+            .navbar {
+                padding:0;  
+            }
+            .nav-item {
+                height:56px;
+                padding-left:25px;
+            }
+            .nav-link {
+                padding-top: 15px;
+                color:#FFF !important;
+                height:56px;
+             }
+            .nav-link:hover {
+                color:#FFF;
+                background:#1fb622;
+            }
+
+            .site-banners img {
+                height:400px;
+                width:100%;
+            }
+
+            .site-section {
+                margin-top:25px;
+                border-top:5px solid #1fb622;
+                background:#060606;
+            }
+
+            .article {
+                padding:25px;
+                border-top:5px solid #1fb622;
+                background:#060606;
+                margin-bottom:15px;
+                
+                color:#FFF;
+            }
+
+            .site-footer {
+                height:100%;
+            }
+
+            .site-footer .nav-item {
+                height:20px;
+                padding:0;
+            }
+            .site-footer .nav-link {
+                padding-top: 0;
+                padding-left:0;
+                color:#FFF !important;
+             }
+            .site-footer .nav-link:hover {
+                color:#000;
+            }
+            .site-footer .nav-link:hover {
+                text-decoration:underline;
+                background:inherit;
+            }
+
+            .body-navigation { }
+
+            .widget-box {
+                margin-bottom:20px;
+            }
+            .widget-box header {
+                background:#000; padding:5px; text-align:center; color:#FFF; border-top:5px solid green;
+            }
+
+            .container {
+                min-height:500px;
+            }
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        {{ include('partials/header.html.twig') }}
+        {% block body %}{% endblock %}
+        {{ include('partials/footer.html.twig') }}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
